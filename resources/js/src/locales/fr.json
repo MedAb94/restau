@@ -1,0 +1,40 @@
+{
+    "nav": {
+        "about": "A propos",
+        "menu": "Menu par categorie",
+        "contact": "Contact"
+    },
+    "home": {
+        "search": "Cherche",
+        "name": "LAZARE'S CHICKEN BBQ HOUSE",
+        "title": "FRESH & TASTY HALAL BBQ BARBCUE HALAL FRAIS ET SAUQUREUX"
+    },
+    "mailBox": {
+        "stay": "Restez informé",
+        "subscribe": "Abonnez-vous à notre boîte aux lettres",
+        "subscribeBtn": "S'inscrire"
+    },
+    "about": {
+        "title": "A propos de nous",
+        "1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.",
+        "2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus."
+    },
+    "contact": {
+        "title": "NOUS CONTACTER",
+        "name": "Nom",
+        "mail": "E-mail",
+        "address": "Adresse",
+        "phone": "Telephone",
+        "enter_name": "Saisir votre nom ici",
+        "enter_email": "Saisir votre e-mail ici",
+        "enter_address": "Saisir votre adresse ici",
+        "enter_phone": "Saisir votre telephone ici",
+        "enter_message": "Saisir votre message ici",
+        "send": "Envoyer"
+
+    },
+    "footer": {
+        "address": "Adresse",
+        "links": "Liens rapides"
+    }
+}
