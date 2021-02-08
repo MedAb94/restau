@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="90d62588-06a9-4073-a7cb-9523f8bb848c" name="Default Changelist" comment="" />
+    <list default="true" id="90d62588-06a9-4073-a7cb-9523f8bb848c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,12 +179,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\medab\Desktop\Work\restau" />
       <recent name="C:\Users\medab\Desktop\Work\restau\resources\js\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -228,7 +234,7 @@
       <workItem from="1607506272343" duration="797000" />
       <workItem from="1607522012493" duration="649000" />
       <workItem from="1607635367960" duration="102000" />
-      <workItem from="1612776081264" duration="2927000" />
+      <workItem from="1612776081264" duration="3240000" />
     </task>
     <servers />
   </component>
