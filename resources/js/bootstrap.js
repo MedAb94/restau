@@ -1,10 +1,5 @@
 window._ = require('lodash');
 
-/**
- * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs. This
- * code may be modified to fit the specific needs of your application.
- */
 
 try {
     window.Popper = require('popper.js').default;
@@ -33,6 +28,6 @@ let sd = (v, d) => {
     return v === undefined || v === null ? d : v;
 };
 
-window.app_api = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/#/api");
-window.axios.defaults.baseURL = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/#/api");
+window.app_api = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api");
+window.axios.defaults.baseURL = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api");
 

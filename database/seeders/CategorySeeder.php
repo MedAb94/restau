@@ -18,7 +18,6 @@ class CategorySeeder extends Seeder
     {
         DB::table('categories')->insert([
             'name' => Str::random(10),
-
         ]);
     }
 }

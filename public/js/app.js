@@ -2470,11 +2470,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Navbar",
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])(["fetchCategories"])), {}, {
+  methods: {
     switchLang: function switchLang(lang) {
       _src_i18n__WEBPACK_IMPORTED_MODULE_1__["default"].locale = lang;
     }
-  }),
+  },
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(["allCategories", "lang"])), {}, {
     categories: function categories() {
       var array = [];
@@ -2487,7 +2487,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }
   }),
   created: function created() {
-    this.fetchCategories();
+    this.$store.dispatch('fetchCategories');
   }
 });
 
@@ -103631,12 +103631,7 @@ module.exports = "/images/waiter.png?31130f283578bb919104b5e9ab76c0e3";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/**
- * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs. This
- * code may be modified to fit the specific needs of your application.
- */
+/* WEBPACK VAR INJECTION */(function(process) {window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 
 try {
   window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"];
@@ -103663,8 +103658,9 @@ var sd = function sd(v, d) {
   return v === undefined || v === null ? d : v;
 };
 
-window.app_api = sd("http://127.0.0.1:8000/api", "http://127.0.0.1:8000/#/api");
-window.axios.defaults.baseURL = sd("http://127.0.0.1:8000/api", "http://127.0.0.1:8000/#/api");
+window.app_api = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api");
+window.axios.defaults.baseURL = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api");
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -104276,7 +104272,7 @@ var routes = [{
   component: _components_Contact__WEBPACK_IMPORTED_MODULE_4__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  mode: 'hash',
+  mode: 'history',
   routes: routes
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);

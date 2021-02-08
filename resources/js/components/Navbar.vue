@@ -84,10 +84,8 @@
     export default {
         name: "Navbar",
         methods: {
-            ...mapActions(["fetchCategories"]),
             switchLang(lang) {
                 i18n.locale = lang;
-
             }
         },
         computed: {
@@ -101,7 +99,7 @@
             }
         },
         created() {
-            this.fetchCategories()
+            this.$store.dispatch('fetchCategories')
         }
     }
 </script>
