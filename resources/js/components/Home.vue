@@ -38,7 +38,7 @@
         <section>
             <v-container v-for="categ in allCategories" :key="categ.id">
                 <div>
-                    <h1 class="red--text">{{categ.name}}</h1>
+                    <h1 class="red--text">{{lang==='fr'?categ.name_fr:categ.name}}</h1>
                 </div>
 
                 <div class="container0 py-3">
@@ -48,17 +48,17 @@
                             <v-row>
                                 <v-col md="8" sm="12">
                                     <h3 class="red--text">
-                                        {{product.name}}
+                                        {{lang==='fr'?product.name_fr:product.name}}
                                     </h3>
                                     <p style="overflow: hidden">
                                         {{product.description}}
                                     </p>
                                     <div class="font-weight-bold">${{product.price}}</div>
                                 </v-col>
-                                <v-col md="4" sm="12" class="pa-0">
+                                <v-col md="4" sm="12" >
                                     <v-img
-                                        :src="product.image"
-                                        class="m-0 mr-md-2"
+                                        src="/images/logo.png"
+                                        class="m-0 mr-md-2 h-100"
                                         contain
                                         max-height="150"
                                     />
@@ -87,7 +87,7 @@
             ...mapActions(["fetchProducts", "fetchCategories"])
         },
         computed: {
-            ...mapGetters(["allProducts", "allCategories"]),
+            ...mapGetters(["allProducts", "allCategories", "lang"]),
         },
         created() {
             // this.fetchProducts()

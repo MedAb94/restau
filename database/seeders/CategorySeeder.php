@@ -16,8 +16,14 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
+        DB::table('categories')->truncate();
         DB::table('categories')->insert([
-            'name' => Str::random(10),
-        ]);
+                ['name' => "COMBOS", 'name_fr'=>"COMBOS"],
+                ['name' => "SALADS", 'name_fr'=>"SALADES"],
+                ['name' => "MAIN DISHES ", 'name_fr'=>"PLATS PRINCIPAUX"],
+                ['name' => "SIDE DISHES", 'name_fr'=>"LES À-CÔTÉS"],
+                ['name' => "BEVERAGES", 'name_fr'=>"BOISSONS"],
+            ]
+        );
     }
 }

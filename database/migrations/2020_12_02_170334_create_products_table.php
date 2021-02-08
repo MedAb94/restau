@@ -17,8 +17,9 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('category_id');
             $table->string('name');
-            $table->string('image');
-            $table->text('description');
+            $table->string('name_fr');
+            $table->string('image')->default("/images/waiter.png");
+            $table->text('description')->default("description");
             $table->double('price');
             $table->timestamps();
 

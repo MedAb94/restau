@@ -19,9 +19,13 @@
                         <v-icon color="red">mdi-phone</v-icon>
                         613-590-8429
                     </h3>
+                    <h3>
+                        <v-icon color="red">mdi-phone</v-icon>
+                        613-276-6153
+                    </h3>
                 </v-col>
                 <v-col cols="12" md="3" sm="12">
-                    {{$t('footer.address')}} : 385 Tompkins Ave #7, Orléans, ON K1E 3H2
+                    {{$t('footer.address')}} : 928 Montreal Rd. Unit-1, Ottawa, ON K1K0S8
                 </v-col>
                 <v-col cols="12" md="3" sm="12">
                     {{$t('footer.links')}}

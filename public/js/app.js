@@ -2172,6 +2172,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AppFooter",
@@ -2317,7 +2321,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     Slider: _Slider__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])(["fetchProducts", "fetchCategories"])),
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(["allProducts", "allCategories"])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(["allProducts", "allCategories", "lang"])),
   created: function created() {// this.fetchProducts()
     // this.fetchCategories()
   }
@@ -42321,6 +42325,19 @@ var render = function() {
                       )
                     ],
                     1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "h3",
+                    [
+                      _c("v-icon", { attrs: { color: "red" } }, [
+                        _vm._v("mdi-phone")
+                      ]),
+                      _vm._v(
+                        "\n                    613-276-6153\n                "
+                      )
+                    ],
+                    1
                   )
                 ],
                 1
@@ -42330,7 +42347,7 @@ var render = function() {
                 _vm._v(
                   "\n                " +
                     _vm._s(_vm.$t("footer.address")) +
-                    " : 385 Tompkins Ave #7, Orléans, ON K1E 3H2\n            "
+                    " : 928 Montreal Rd. Unit-1, Ottawa, ON K1K0S8\n            "
                 )
               ]),
               _vm._v(" "),
@@ -42535,7 +42552,7 @@ var render = function() {
             return _c("v-container", { key: categ.id }, [
               _c("div", [
                 _c("h1", { staticClass: "red--text" }, [
-                  _vm._v(_vm._s(categ.name))
+                  _vm._v(_vm._s(_vm.lang === "fr" ? categ.name_fr : categ.name))
                 ])
               ]),
               _vm._v(" "),
@@ -42562,7 +42579,11 @@ var render = function() {
                                 _c("h3", { staticClass: "red--text" }, [
                                   _vm._v(
                                     "\n                                    " +
-                                      _vm._s(product.name) +
+                                      _vm._s(
+                                        _vm.lang === "fr"
+                                          ? product.name_fr
+                                          : product.name
+                                      ) +
                                       "\n                                "
                                   )
                                 ]),
@@ -42586,15 +42607,12 @@ var render = function() {
                               _vm._v(" "),
                               _c(
                                 "v-col",
-                                {
-                                  staticClass: "pa-0",
-                                  attrs: { md: "4", sm: "12" }
-                                },
+                                { attrs: { md: "4", sm: "12" } },
                                 [
                                   _c("v-img", {
-                                    staticClass: "m-0 mr-md-2",
+                                    staticClass: "m-0 mr-md-2 h-100",
                                     attrs: {
-                                      src: product.image,
+                                      src: "/images/logo.png",
                                       contain: "",
                                       "max-height": "150"
                                     }
@@ -103659,7 +103677,8 @@ var sd = function sd(v, d) {
 };
 
 window.app_api = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api");
-window.axios.defaults.baseURL = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api");
+window.axios.defaults.baseURL = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api"); //window.axios.defaults.baseURL = "http://127.0.0.1:8000/api";
+
 window.axios.defaults.baseURL = "https://restau0.herokuapp.com/api";
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
