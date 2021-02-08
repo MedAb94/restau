@@ -2310,7 +2310,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
 
 
 
@@ -42558,74 +42557,52 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "container0 py-3" },
+                { staticClass: "container0 py-3 white--text" },
                 _vm._l(categ.products, function(product, index) {
                   return _c(
-                    "v-row",
+                    "v-flex",
                     {
                       key: product.id,
-                      staticClass: "w-75 mr-5 double-border",
-                      attrs: { align: "center" }
+                      staticClass: "double-border mr-5 ",
+                      style: {
+                        width: _vm.$vuetify.breakpoint.mdAndUp ? "25%" : "100%"
+                      }
                     },
                     [
-                      _c(
-                        "v-col",
-                        { attrs: { cols: "12" } },
-                        [
-                          _c(
-                            "v-row",
-                            [
-                              _c("v-col", { attrs: { md: "8", sm: "12" } }, [
-                                _c("h3", { staticClass: "red--text" }, [
-                                  _vm._v(
-                                    "\n                                    " +
-                                      _vm._s(
-                                        _vm.lang === "fr"
-                                          ? product.name_fr
-                                          : product.name
-                                      ) +
-                                      "\n                                "
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c(
-                                  "p",
-                                  { staticStyle: { overflow: "hidden" } },
-                                  [
-                                    _vm._v(
-                                      "\n                                    " +
-                                        _vm._s(product.description) +
-                                        "\n                                "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "font-weight-bold" }, [
-                                  _vm._v("$" + _vm._s(product.price))
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "v-col",
-                                { attrs: { md: "4", sm: "12" } },
-                                [
-                                  _c("v-img", {
-                                    staticClass: "m-0 mr-md-2 h-100",
-                                    attrs: {
-                                      src: "/images/logo.png",
-                                      contain: "",
-                                      "max-height": "150"
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
+                      _c("v-col", { attrs: { cols: "12" } }, [
+                        _c(
+                          "div",
+                          [
+                            _c("v-img", {
+                              staticClass: "m-0 mr-md-2 h-100",
+                              attrs: {
+                                src: "/images/logo.png",
+                                contain: "",
+                                "max-height": "150"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("div", [
+                          _c("strong", [
+                            _vm._v(
+                              "\n                                " +
+                                _vm._s(
+                                  _vm.lang === "fr"
+                                    ? product.name_fr
+                                    : product.name
+                                ) +
+                                "\n                            "
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "font-weight-bold" }, [
+                            _vm._v("$" + _vm._s(product.price))
+                          ])
+                        ])
+                      ])
                     ],
                     1
                   )
