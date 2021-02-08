@@ -6,7 +6,8 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
-} catch (e) {}
+} catch (e) {
+}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -30,4 +31,5 @@ let sd = (v, d) => {
 
 window.app_api = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api");
 window.axios.defaults.baseURL = sd(process.env.MIX_API_URL, "http://127.0.0.1:8000/api");
+window.axios.defaults.baseURL = "https://restau0.herokuapp.com/api";
 
