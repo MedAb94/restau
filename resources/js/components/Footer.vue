@@ -15,44 +15,41 @@
                         max-width="200px"
                     />
                     <br>
-                    <h3>
+                    <strong>
                         <v-icon color="red">mdi-phone</v-icon>
                         613-590-8429
-                    </h3>
-                    <h3>
+                    </strong> <br>
+                    <strong>
                         <v-icon color="red">mdi-phone</v-icon>
                         613-276-6153
-                    </h3>
+                    </strong>
                 </v-col>
                 <v-col cols="12" md="3" sm="12">
-                    {{$t('footer.address')}} : 928 Montreal Rd. Unit-1, Ottawa, ON K1K0S8
+                    <strong>
+                        Horaires
+                    </strong>
+                  <div >
+                      {{lang==='fr'?"Tous les jours":"Everyday"}}
+                  </div>
+                    <div >
+                     11H:00 - 21H:00
+                  </div>
                 </v-col>
                 <v-col cols="12" md="3" sm="12">
                     {{$t('footer.links')}}
                     <div class="mt-2">
-                        <router-link :to="{name: 'About'}" tag="a" class="mr-2">{{$t('nav.about')}}</router-link>
-                        <router-link :to="{name: 'Home'}" tag="a" class="mr-2">Menu</router-link>
-                        <router-link :to="{name: 'Contact'}" tag="a">{{$t('nav.contact')}}</router-link>
+                        <router-link :to="{name: 'About'}" tag="a" class="mr-2 red--text">{{$t('nav.about')}}</router-link>
+                        <router-link :to="{name: 'Home'}" tag="a" class="mr-2 red--text">Menu</router-link>
+                        <router-link :to="{name: 'Contact'}" class="red--text" tag="a">{{$t('nav.contact')}}</router-link>
                     </div>
 
                 </v-col>
                 <v-col cols="12" md="3" sm="12">
+                    <div>
+                        {{$t('footer.address')}} : 928 Montreal Rd. Unit-1, Ottawa, ON K1K0S8
+                    </div>
                     <v-icon color="red">mdi-facebook</v-icon>
                     <v-icon color="red">mdi-instagram</v-icon>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col md="4" sm="12" class=" mx-auto">
-                    <v-row v-for="d in hours" :key="d.day">
-                        <v-col cols="6">
-                            {{lang==='fr'?d.dayFr:d.day}}
-                        </v-col>
-                        <v-col cols="6">
-                            {{d.hour}}
-
-                        </v-col>
-                    </v-row>
-
                 </v-col>
             </v-row>
 

@@ -2173,9 +2173,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AppFooter",
@@ -42094,7 +42091,10 @@ var render = function() {
         [
           _c(
             "v-card",
-            { staticClass: "bg-primary rounded", attrs: { elevation: "8" } },
+            {
+              staticClass: "bg-primary rounded py-5",
+              attrs: { elevation: "8" }
+            },
             [
               _c(
                 "v-form",
@@ -42314,7 +42314,7 @@ var render = function() {
                   _c("br"),
                   _vm._v(" "),
                   _c(
-                    "h3",
+                    "strong",
                     [
                       _c("v-icon", { attrs: { color: "red" } }, [
                         _vm._v("mdi-phone")
@@ -42326,8 +42326,10 @@ var render = function() {
                     1
                   ),
                   _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
                   _c(
-                    "h3",
+                    "strong",
                     [
                       _c("v-icon", { attrs: { color: "red" } }, [
                         _vm._v("mdi-phone")
@@ -42343,11 +42345,23 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("v-col", { attrs: { cols: "12", md: "3", sm: "12" } }, [
-                _vm._v(
-                  "\n                " +
-                    _vm._s(_vm.$t("footer.address")) +
-                    " : 928 Montreal Rd. Unit-1, Ottawa, ON K1K0S8\n            "
-                )
+                _c("strong", [
+                  _vm._v("\n                    Horaires\n                ")
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v(
+                    "\n                  " +
+                      _vm._s(
+                        _vm.lang === "fr" ? "Tous les jours" : "Everyday"
+                      ) +
+                      "\n              "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v("\n                 11H:00 - 21H:00\n              ")
+                ])
               ]),
               _vm._v(" "),
               _c("v-col", { attrs: { cols: "12", md: "3", sm: "12" } }, [
@@ -42363,7 +42377,7 @@ var render = function() {
                     _c(
                       "router-link",
                       {
-                        staticClass: "mr-2",
+                        staticClass: "mr-2 red--text",
                         attrs: { to: { name: "About" }, tag: "a" }
                       },
                       [_vm._v(_vm._s(_vm.$t("nav.about")))]
@@ -42372,7 +42386,7 @@ var render = function() {
                     _c(
                       "router-link",
                       {
-                        staticClass: "mr-2",
+                        staticClass: "mr-2 red--text",
                         attrs: { to: { name: "Home" }, tag: "a" }
                       },
                       [_vm._v("Menu")]
@@ -42380,7 +42394,10 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "router-link",
-                      { attrs: { to: { name: "Contact" }, tag: "a" } },
+                      {
+                        staticClass: "red--text",
+                        attrs: { to: { name: "Contact" }, tag: "a" }
+                      },
                       [_vm._v(_vm._s(_vm.$t("nav.contact")))]
                     )
                   ],
@@ -42392,6 +42409,14 @@ var render = function() {
                 "v-col",
                 { attrs: { cols: "12", md: "3", sm: "12" } },
                 [
+                  _c("div", [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(_vm.$t("footer.address")) +
+                        " : 928 Montreal Rd. Unit-1, Ottawa, ON K1K0S8\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
                   _c("v-icon", { attrs: { color: "red" } }, [
                     _vm._v("mdi-facebook")
                   ]),
@@ -42400,42 +42425,6 @@ var render = function() {
                     _vm._v("mdi-instagram")
                   ])
                 ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-row",
-            [
-              _c(
-                "v-col",
-                { staticClass: " mx-auto", attrs: { md: "4", sm: "12" } },
-                _vm._l(_vm.hours, function(d) {
-                  return _c(
-                    "v-row",
-                    { key: d.day },
-                    [
-                      _c("v-col", { attrs: { cols: "6" } }, [
-                        _vm._v(
-                          "\n                        " +
-                            _vm._s(_vm.lang === "fr" ? d.dayFr : d.day) +
-                            "\n                    "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("v-col", { attrs: { cols: "6" } }, [
-                        _vm._v(
-                          "\n                        " +
-                            _vm._s(d.hour) +
-                            "\n\n                    "
-                        )
-                      ])
-                    ],
-                    1
-                  )
-                }),
                 1
               )
             ],

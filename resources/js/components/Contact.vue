@@ -2,7 +2,7 @@
     <div>
         <slider></slider>
         <v-container>
-            <v-card class="bg-primary rounded" elevation="8">
+            <v-card class="bg-primary rounded py-5" elevation="8">
                 <v-form v-model="valid">
                     <v-container>
                         <h2 class="text-center red--text">{{$t('contact.title')}}</h2>
