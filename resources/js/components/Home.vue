@@ -4,7 +4,7 @@
             <div class="container">
                 <div>
                     <v-text-field
-                        :label="$t('home.search')"
+                        :placeholder="$t('home.search')"
                         class="w-50 mx-auto"
                         outlined
                         color="white"
@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <slider></slider>
+        <slider ></slider>
         <div class="text-center container red--text">
             <h1>{{ $t('home.name') }}</h1>
             <div class="waiter-area">
@@ -40,32 +40,28 @@
                 <div>
                     <h1 class="red--text">{{ lang === 'fr' ? categ.name_fr : categ.name }}</h1>
                 </div>
-
-
-                <div class="container0 py-3 white--text">
-                    <v-flex :style="{width: $vuetify.breakpoint.mdAndUp?'25%':'100%'}" class="double-border mr-5 "
-                            v-for="(product, index) in categ.products"
-                            :key="product.id">
-                        <v-col cols="12">
-                            <div>
-                                <v-img
-                                    src="/images/logo.png"
-                                    class="m-0 mr-md-2 h-100"
-                                    contain
-                                    max-height="150"
-                                />
-                            </div>
-                            <div>
-                                <strong>
-                                    {{ lang === 'fr' ? product.name_fr : product.name }}
-                                </strong>
-                                <div class="font-weight-bold">${{ product.price }}</div>
-                            </div>
-
-                        </v-col>
-                    </v-flex>
-                </div>
-
+                <v-row justify="center" align="stretch">
+                    <v-col cols="12" md="3" lg="3" class=""
+                           v-for="product in categ.products"
+                           :key="product.id">
+                        <div flat class="bg-primary border-green pa-3 rounded">
+                                <div class="border-yello rounded pa-1">
+                                    <div>
+                                        <v-img
+                                            src="/images/logo.png"
+                                            contain
+                                        />
+                                    </div>
+                                    <div class="text-white">
+                                        <h5>
+                                            {{ lang === 'fr' ? product.name_fr : product.name }}
+                                        </h5>
+                                        <div class="font-weight-bold">${{ product.price }}</div>
+                                    </div>
+                                </div>
+                        </div>
+                    </v-col>
+                </v-row>
             </v-container>
             <mailbox></mailbox>
         </section>
@@ -100,6 +96,13 @@ export default {
     height: 30vh;
 }
 
+.border-green {
+    border:3px solid  #64DD17;
+}
+
+.border-yello {
+    border:3px solid #CDDC39;
+}
 
 .waiter-area {
     border: 3px solid #64DD17;

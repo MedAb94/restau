@@ -18,12 +18,14 @@
             </v-btn>
         </div>
         <div class="text-center mt-5 mb-0">
+            <a href="/">
+                <v-img
+                    :src="require('../assets/logo.png')"
+                    class="mx-auto mb-0"
+                    max-width="200px"
+                />
+            </a>
 
-            <v-img
-                :src="require('../assets/logo.png')"
-                class="mx-auto mb-0"
-                max-width="200px"
-            />
         </div>
         <nav class="navbar navbar-expand-md navbar-dark bg-primary">
             <div class="container p-0">
@@ -51,11 +53,10 @@
                             <router-link :to="{name:'Home'}" tag="a" class="nav-link">
                                 <v-select
                                     :items="categories"
-                                    :label="$t('nav.menu')"
+                                    :placeholder="$t('nav.menu')"
                                     class="mt-5"
                                     outlined
                                     filled
-                                    color="white"
                                     background-color="white"
 
                                 />
@@ -93,7 +94,7 @@
             categories() {
                 let array = [];
                 for (const o in this.allCategories) {
-                    array.push(this.allCategories[o]['name']);
+                    array.push(this.allCategories[o]['name'].toLowerCase());
                 }
                 return array
             }

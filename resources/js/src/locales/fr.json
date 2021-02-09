@@ -1,11 +1,11 @@
 {
     "nav": {
-        "about": "A propos",
-        "menu": "Menu par categorie",
-        "contact": "Contact"
+        "about": "À propos",
+        "menu": "Menu par catégorie",
+        "contact": "Contactez-nous"
     },
     "home": {
-        "search": "Cherche",
+        "search": "Cherchez un plat",
         "name": "LAZARE'S CHICKEN BBQ HOUSE",
         "title": "FRESH & TASTY HALAL BBQ BARBCUE HALAL FRAIS ET SAUQUREUX"
     },

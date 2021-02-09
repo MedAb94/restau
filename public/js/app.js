@@ -1960,6 +1960,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1986,6 +2021,41 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Mailbox__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Mailbox */ "./resources/js/components/Mailbox.vue");
 /* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Slider */ "./resources/js/components/Slider.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2164,50 +2234,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AppFooter",
   data: function data() {
-    return {
-      hours: [{
-        day: "Monday",
-        dayFr: "Lundi",
-        hour: "11am - 9am"
-      }, {
-        day: "Tuesday",
-        dayFr: "Mardi",
-        hour: "11am - 9am"
-      }, {
-        day: "Wednesday",
-        dayFr: "Mercredi",
-        hour: "11am - 9am"
-      }, {
-        day: "Thursday",
-        dayFr: "Jeudi",
-        hour: "11am - 9am"
-      }, {
-        day: "Friday",
-        dayFr: "Vendredi",
-        hour: "11am - 9am"
-      }, {
-        day: "Saturday",
-        dayFr: "Samedi",
-        hour: "11am - 9am"
-      }, {
-        day: "Sunday",
-        dayFr: "Dimanche",
-        hour: "11am - 9am"
-      }]
-    };
+    return {};
   },
   computed: Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(["lang"])
 });
@@ -2232,10 +2263,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
 //
 //
 //
@@ -2466,6 +2493,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2480,7 +2508,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var array = [];
 
       for (var o in this.allCategories) {
-        array.push(this.allCategories[o]['name']);
+        array.push(this.allCategories[o]['name'].toLowerCase());
       }
 
       return array;
@@ -2528,8 +2556,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Slider"
+  name: "Slider",
+  props: {
+    height: {
+      type: String,
+      "default": '100%'
+    }
+  }
 });
 
 /***/ }),
@@ -6993,7 +7041,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".jumbotron[data-v-f2b6376c] {\n  height: 30vh;\n}\n.waiter-area[data-v-f2b6376c] {\n  border: 3px solid #64DD17;\n  border-radius: 20px;\n  padding: 2px;\n}\n.waiter-inner[data-v-f2b6376c] {\n  border: 3px solid #CDDC39;\n  border-radius: 20px;\n}\n.container0[data-v-f2b6376c] {\n  display: flex;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n}\n.container0 img[data-v-f2b6376c] {\n  margin-right: 15px;\n}\n.container0[data-v-f2b6376c]::-webkit-scrollbar {\n  display: none;\n}\n.double-border[data-v-f2b6376c] {\n  border: 3px solid #CDDC39;\n  border-radius: 10px;\n  position: relative;\n  margin: 0 auto;\n}\n.double-border[data-v-f2b6376c]:before {\n  background: none;\n  border-radius: 10px;\n  border: 3px solid #64DD17;\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 4px;\n  left: 4px;\n  right: 4px;\n  bottom: 4px;\n  pointer-events: none;\n}", ""]);
+exports.push([module.i, ".jumbotron[data-v-f2b6376c] {\n  height: 30vh;\n}\n.border-green[data-v-f2b6376c] {\n  border: 3px solid #64DD17;\n}\n.border-yello[data-v-f2b6376c] {\n  border: 3px solid #CDDC39;\n}\n.waiter-area[data-v-f2b6376c] {\n  border: 3px solid #64DD17;\n  border-radius: 20px;\n  padding: 2px;\n}\n.waiter-inner[data-v-f2b6376c] {\n  border: 3px solid #CDDC39;\n  border-radius: 20px;\n}\n.container0[data-v-f2b6376c] {\n  display: flex;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n}\n.container0 img[data-v-f2b6376c] {\n  margin-right: 15px;\n}\n.container0[data-v-f2b6376c]::-webkit-scrollbar {\n  display: none;\n}\n.double-border[data-v-f2b6376c] {\n  border: 3px solid #CDDC39;\n  border-radius: 10px;\n  position: relative;\n  margin: 0 auto;\n}\n.double-border[data-v-f2b6376c]:before {\n  background: none;\n  border-radius: 10px;\n  border: 3px solid #64DD17;\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 4px;\n  left: 4px;\n  right: 4px;\n  bottom: 4px;\n  pointer-events: none;\n}", ""]);
 
 // exports
 
@@ -41951,7 +41999,69 @@ var render = function() {
     "div",
     { staticClass: "bg-primary white--text" },
     [
-      _c("slider"),
+      _c(
+        "v-carousel",
+        { attrs: { height: "40vh" } },
+        [
+          _c(
+            "v-carousel-item",
+            [
+              _c(
+                "v-sheet",
+                { attrs: { height: "100%", tile: "" } },
+                [
+                  _c(
+                    "v-row",
+                    {
+                      staticClass: "fill-height",
+                      attrs: { align: "center", justify: "center" }
+                    },
+                    [
+                      _c("v-img", {
+                        attrs: { src: __webpack_require__(/*! ../assets/home.jpg */ "./resources/js/assets/home.jpg"), cover: "" }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-carousel-item",
+            [
+              _c(
+                "v-sheet",
+                { attrs: { height: "100%", tile: "" } },
+                [
+                  _c(
+                    "v-row",
+                    {
+                      staticClass: "fill-height",
+                      attrs: { align: "center", justify: "center" }
+                    },
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          src: __webpack_require__(/*! ../assets/about.jpg */ "./resources/js/assets/about.jpg"),
+                          cover: ""
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
       _c(
         "v-container",
@@ -42000,7 +42110,7 @@ var render = function() {
                 [
                   _c("v-img", {
                     staticClass: "my-3",
-                    attrs: { src: __webpack_require__(/*! ../assets/1.jpg */ "./resources/js/assets/1.jpg"), cover: "" }
+                    attrs: { src: __webpack_require__(/*! ../assets/about.jpg */ "./resources/js/assets/about.jpg"), cover: "" }
                   })
                 ],
                 1
@@ -42020,7 +42130,7 @@ var render = function() {
                 [
                   _c("v-img", {
                     staticClass: "my-3",
-                    attrs: { src: __webpack_require__(/*! ../assets/1.jpg */ "./resources/js/assets/1.jpg"), cover: "" }
+                    attrs: { src: __webpack_require__(/*! ../assets/about.jpg */ "./resources/js/assets/about.jpg"), cover: "" }
                   })
                 ],
                 1
@@ -42084,7 +42194,72 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("slider"),
+      _c(
+        "v-carousel",
+        { attrs: { height: "50vh" } },
+        [
+          _c(
+            "v-carousel-item",
+            [
+              _c(
+                "v-sheet",
+                { attrs: { height: "100%", tile: "" } },
+                [
+                  _c(
+                    "v-row",
+                    {
+                      staticClass: "fill-height",
+                      attrs: { align: "center", justify: "center" }
+                    },
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          src: __webpack_require__(/*! ../assets/contact.jpg */ "./resources/js/assets/contact.jpg"),
+                          cover: ""
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-carousel-item",
+            [
+              _c(
+                "v-sheet",
+                { attrs: { height: "100%", tile: "" } },
+                [
+                  _c(
+                    "v-row",
+                    {
+                      staticClass: "fill-height",
+                      attrs: { align: "center", justify: "center" }
+                    },
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          src: __webpack_require__(/*! ../assets/about.jpg */ "./resources/js/assets/about.jpg"),
+                          cover: ""
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
       _c(
         "v-container",
@@ -42297,7 +42472,6 @@ var render = function() {
         [
           _c(
             "v-row",
-            { attrs: { align: "center" } },
             [
               _c(
                 "v-col",
@@ -42320,26 +42494,13 @@ var render = function() {
                         _vm._v("mdi-phone")
                       ]),
                       _vm._v(
-                        "\n                    613-590-8429\n                "
+                        "\n                    613-590-8429 / 613-276-6153\n                "
                       )
                     ],
                     1
                   ),
                   _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "strong",
-                    [
-                      _c("v-icon", { attrs: { color: "red" } }, [
-                        _vm._v("mdi-phone")
-                      ]),
-                      _vm._v(
-                        "\n                    613-276-6153\n                "
-                      )
-                    ],
-                    1
-                  )
+                  _c("br")
                 ],
                 1
               ),
@@ -42364,7 +42525,7 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _c("v-col", { attrs: { cols: "12", md: "3", sm: "12" } }, [
+              _c("v-col", { attrs: { cols: "12", md: "2", sm: "12" } }, [
                 _vm._v(
                   "\n                " +
                     _vm._s(_vm.$t("footer.links")) +
@@ -42407,7 +42568,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-col",
-                { attrs: { cols: "12", md: "3", sm: "12" } },
+                { attrs: { cols: "12", md: "4", sm: "12" } },
                 [
                   _c("div", [
                     _vm._v(
@@ -42429,17 +42590,14 @@ var render = function() {
               )
             ],
             1
-          )
+          ),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v("\n        @" + _vm._s(new Date().getFullYear()) + " — "),
+          _c("strong", [_vm._v("LAZARE'S CHICKEN BBQ HOUSE")])
         ],
         1
-      ),
-      _vm._v(" "),
-      _c("v-divider"),
-      _vm._v(" "),
-      _c("v-card-text", { staticClass: "red--text" }, [
-        _vm._v("\n        @" + _vm._s(new Date().getFullYear()) + " — "),
-        _c("strong", [_vm._v("LAZARE'S CHICKEN BBQ HOUSE")])
-      ])
+      )
     ],
     1
   )
@@ -42478,7 +42636,7 @@ var render = function() {
               _c("v-text-field", {
                 staticClass: "w-50 mx-auto",
                 attrs: {
-                  label: _vm.$t("home.search"),
+                  placeholder: _vm.$t("home.search"),
                   outlined: "",
                   color: "white",
                   filled: "",
@@ -42537,68 +42695,84 @@ var render = function() {
         "section",
         [
           _vm._l(_vm.allCategories, function(categ) {
-            return _c("v-container", { key: categ.id }, [
-              _c("div", [
-                _c("h1", { staticClass: "red--text" }, [
-                  _vm._v(_vm._s(_vm.lang === "fr" ? categ.name_fr : categ.name))
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "container0 py-3 white--text" },
-                _vm._l(categ.products, function(product, index) {
-                  return _c(
-                    "v-flex",
-                    {
-                      key: product.id,
-                      staticClass: "double-border mr-5 ",
-                      style: {
-                        width: _vm.$vuetify.breakpoint.mdAndUp ? "25%" : "100%"
-                      }
-                    },
-                    [
-                      _c("v-col", { attrs: { cols: "12" } }, [
+            return _c(
+              "v-container",
+              { key: categ.id },
+              [
+                _c("div", [
+                  _c("h1", { staticClass: "red--text" }, [
+                    _vm._v(
+                      _vm._s(_vm.lang === "fr" ? categ.name_fr : categ.name)
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "v-row",
+                  { attrs: { justify: "center", align: "stretch" } },
+                  _vm._l(categ.products, function(product) {
+                    return _c(
+                      "v-col",
+                      {
+                        key: product.id,
+                        attrs: { cols: "12", md: "3", lg: "3" }
+                      },
+                      [
                         _c(
                           "div",
+                          {
+                            staticClass: "bg-primary border-green pa-3 rounded",
+                            attrs: { flat: "" }
+                          },
                           [
-                            _c("v-img", {
-                              staticClass: "m-0 mr-md-2 h-100",
-                              attrs: {
-                                src: "/images/logo.png",
-                                contain: "",
-                                "max-height": "150"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("div", [
-                          _c("strong", [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(
-                                  _vm.lang === "fr"
-                                    ? product.name_fr
-                                    : product.name
-                                ) +
-                                "\n                            "
+                            _c(
+                              "div",
+                              { staticClass: "border-yello rounded pa-1" },
+                              [
+                                _c(
+                                  "div",
+                                  [
+                                    _c("v-img", {
+                                      attrs: {
+                                        src: "/images/logo.png",
+                                        contain: ""
+                                      }
+                                    })
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "text-white" }, [
+                                  _c("h5", [
+                                    _vm._v(
+                                      "\n                                        " +
+                                        _vm._s(
+                                          _vm.lang === "fr"
+                                            ? product.name_fr
+                                            : product.name
+                                        ) +
+                                        "\n                                    "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "font-weight-bold" },
+                                    [_vm._v("$" + _vm._s(product.price))]
+                                  )
+                                ])
+                              ]
                             )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "font-weight-bold" }, [
-                            _vm._v("$" + _vm._s(product.price))
-                          ])
-                        ])
-                      ])
-                    ],
-                    1
-                  )
-                }),
-                1
-              )
-            ])
+                          ]
+                        )
+                      ]
+                    )
+                  }),
+                  1
+                )
+              ],
+              1
+            )
           }),
           _vm._v(" "),
           _c("mailbox")
@@ -42756,17 +42930,19 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "text-center mt-5 mb-0" },
-      [
-        _c("v-img", {
-          staticClass: "mx-auto mb-0",
-          attrs: { src: __webpack_require__(/*! ../assets/logo.png */ "./resources/js/assets/logo.png"), "max-width": "200px" }
-        })
-      ],
-      1
-    ),
+    _c("div", { staticClass: "text-center mt-5 mb-0" }, [
+      _c(
+        "a",
+        { attrs: { href: "/" } },
+        [
+          _c("v-img", {
+            staticClass: "mx-auto mb-0",
+            attrs: { src: __webpack_require__(/*! ../assets/logo.png */ "./resources/js/assets/logo.png"), "max-width": "200px" }
+          })
+        ],
+        1
+      )
+    ]),
     _vm._v(" "),
     _c(
       "nav",
@@ -42819,10 +42995,9 @@ var render = function() {
                             staticClass: "mt-5",
                             attrs: {
                               items: _vm.categories,
-                              label: _vm.$t("nav.menu"),
+                              placeholder: _vm.$t("nav.menu"),
                               outlined: "",
                               filled: "",
-                              color: "white",
                               "background-color": "white"
                             }
                           })
@@ -42939,14 +43114,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-carousel",
-    _vm._l(3, function(n) {
-      return _c(
+    [
+      _c(
         "v-carousel-item",
-        { key: n },
         [
           _c(
             "v-sheet",
-            { attrs: { height: "100%", tile: "" } },
+            { attrs: { height: _vm.height, tile: "" } },
             [
               _c(
                 "v-row",
@@ -42956,7 +43130,34 @@ var render = function() {
                 },
                 [
                   _c("v-img", {
-                    attrs: { src: __webpack_require__(/*! ../assets/slide/1.jpg */ "./resources/js/assets/slide/1.jpg"), cover: "" }
+                    attrs: { src: __webpack_require__(/*! ../assets/home.jpg */ "./resources/js/assets/home.jpg"), cover: "" }
+                  })
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-carousel-item",
+        [
+          _c(
+            "v-sheet",
+            { attrs: { height: _vm.height, tile: "" } },
+            [
+              _c(
+                "v-row",
+                {
+                  staticClass: "fill-height",
+                  attrs: { align: "center", justify: "center" }
+                },
+                [
+                  _c("v-img", {
+                    attrs: { src: __webpack_require__(/*! ../assets/about.jpg */ "./resources/js/assets/about.jpg"), cover: "" }
                   })
                 ],
                 1
@@ -42967,7 +43168,7 @@ var render = function() {
         ],
         1
       )
-    }),
+    ],
     1
   )
 }
@@ -103564,14 +103765,36 @@ var app = new Vue({
 
 /***/ }),
 
-/***/ "./resources/js/assets/1.jpg":
-/*!***********************************!*\
-  !*** ./resources/js/assets/1.jpg ***!
-  \***********************************/
+/***/ "./resources/js/assets/about.jpg":
+/*!***************************************!*\
+  !*** ./resources/js/assets/about.jpg ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/1.jpg?b2d66adf7c92782f373957f9cad95fde";
+module.exports = "/images/about.jpg?8eecaa9b403fc1fb879f0f69534db856";
+
+/***/ }),
+
+/***/ "./resources/js/assets/contact.jpg":
+/*!*****************************************!*\
+  !*** ./resources/js/assets/contact.jpg ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/contact.jpg?107800c238b7bc4874e44acde2d0d7ca";
+
+/***/ }),
+
+/***/ "./resources/js/assets/home.jpg":
+/*!**************************************!*\
+  !*** ./resources/js/assets/home.jpg ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/home.jpg?af7ec246e63f0fba77ec690a763ef7c8";
 
 /***/ }),
 
@@ -103583,17 +103806,6 @@ module.exports = "/images/1.jpg?b2d66adf7c92782f373957f9cad95fde";
 /***/ (function(module, exports) {
 
 module.exports = "/images/logo.png?e20211bc9fa8c454b2db2e5bb7f9fc81";
-
-/***/ }),
-
-/***/ "./resources/js/assets/slide/1.jpg":
-/*!*****************************************!*\
-  !*** ./resources/js/assets/slide/1.jpg ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/1.jpg?5fa3b0d1cbd4c4be05ae683793f99bb4";
 
 /***/ }),
 
@@ -104259,6 +104471,16 @@ var routes = [{
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
+  scrollBehavior: function scrollBehavior(to, from, savedPosition) {
+    if (to.hash) return {
+      selector: to.hash
+    };
+    if (savedPosition) return savedPosition;
+    return {
+      x: 0,
+      y: 0
+    };
+  },
   routes: routes
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
@@ -104345,7 +104567,7 @@ webpackContext.id = "./resources/js/src/locales sync recursive [A-Za-z0-9-_,\\s]
 /*! exports provided: nav, home, mailBox, about, contact, footer, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"nav\":{\"about\":\"About\",\"menu\":\"Menu by category\",\"contact\":\"Contact\"},\"home\":{\"search\":\"Search\",\"name\":\"LAZARE'S CHICKEN BBQ HOUSE\",\"title\":\"FRESH & TASTY HALAL BBQ BARBCUE HALAL FRAIS ET SAUQUREUX\"},\"mailBox\":{\"stay\":\"Stay informed\",\"subscribe\":\"Subscribe to our mailbox\",\"subscribeBtn\":\"Subscribe\"},\"about\":{\"1\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.\",\"2\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.\",\"title\":\"ABOUT US\"},\"contact\":{\"title\":\"CONTACT US\",\"name\":\"Name\",\"mail\":\"Email\",\"address\":\"Address\",\"phone\":\"Phone\",\"enter_name\":\"Enter your name here\",\"enter_email\":\"Enter your email here\",\"enter_address\":\"Enter your address here\",\"enter_phone\":\"Enter your phone here\",\"enter_message\":\"Type your message here\",\"send\":\"Send\"},\"footer\":{\"address\":\"Address\",\"links\":\"Quick links\"}}");
+module.exports = JSON.parse("{\"nav\":{\"about\":\"About\",\"menu\":\"Menu by category\",\"contact\":\"Contact\"},\"home\":{\"search\":\"Type the name of a dish\",\"name\":\"LAZARE'S CHICKEN BBQ HOUSE\",\"title\":\"FRESH & TASTY HALAL BBQ BARBCUE HALAL FRAIS ET SAUQUREUX\"},\"mailBox\":{\"stay\":\"Stay informed\",\"subscribe\":\"Subscribe to our mailbox\",\"subscribeBtn\":\"Subscribe\"},\"about\":{\"1\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.\",\"2\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.\",\"title\":\"ABOUT US\"},\"contact\":{\"title\":\"CONTACT US\",\"name\":\"Name\",\"mail\":\"Email\",\"address\":\"Address\",\"phone\":\"Phone\",\"enter_name\":\"Enter your name here\",\"enter_email\":\"Enter your email here\",\"enter_address\":\"Enter your address here\",\"enter_phone\":\"Enter your phone here\",\"enter_message\":\"Type your message here\",\"send\":\"Send\"},\"footer\":{\"address\":\"Address\",\"links\":\"Quick links\"}}");
 
 /***/ }),
 
@@ -104356,7 +104578,7 @@ module.exports = JSON.parse("{\"nav\":{\"about\":\"About\",\"menu\":\"Menu by ca
 /*! exports provided: nav, home, mailBox, about, contact, footer, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"nav\":{\"about\":\"A propos\",\"menu\":\"Menu par categorie\",\"contact\":\"Contact\"},\"home\":{\"search\":\"Cherche\",\"name\":\"LAZARE'S CHICKEN BBQ HOUSE\",\"title\":\"FRESH & TASTY HALAL BBQ BARBCUE HALAL FRAIS ET SAUQUREUX\"},\"mailBox\":{\"stay\":\"Restez informé\",\"subscribe\":\"Abonnez-vous à notre boîte aux lettres\",\"subscribeBtn\":\"S'inscrire\"},\"about\":{\"1\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.\",\"2\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.\",\"title\":\"A propos de nous\"},\"contact\":{\"title\":\"NOUS CONTACTER\",\"name\":\"Nom\",\"mail\":\"E-mail\",\"address\":\"Adresse\",\"phone\":\"Telephone\",\"enter_name\":\"Saisir votre nom ici\",\"enter_email\":\"Saisir votre e-mail ici\",\"enter_address\":\"Saisir votre adresse ici\",\"enter_phone\":\"Saisir votre telephone ici\",\"enter_message\":\"Saisir votre message ici\",\"send\":\"Envoyer\"},\"footer\":{\"address\":\"Adresse\",\"links\":\"Liens rapides\"}}");
+module.exports = JSON.parse("{\"nav\":{\"about\":\"À propos\",\"menu\":\"Menu par catégorie\",\"contact\":\"Contactez-nous\"},\"home\":{\"search\":\"Cherchez un plat\",\"name\":\"LAZARE'S CHICKEN BBQ HOUSE\",\"title\":\"FRESH & TASTY HALAL BBQ BARBCUE HALAL FRAIS ET SAUQUREUX\"},\"mailBox\":{\"stay\":\"Restez informé\",\"subscribe\":\"Abonnez-vous à notre boîte aux lettres\",\"subscribeBtn\":\"S'inscrire\"},\"about\":{\"1\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.\",\"2\":\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi aperiam aspernatur assumenda, deserunt explicabo fuga illum ipsa itaque, libero quam quas rem rerum similique suscipit, vitae voluptate voluptatibus.\",\"title\":\"A propos de nous\"},\"contact\":{\"title\":\"NOUS CONTACTER\",\"name\":\"Nom\",\"mail\":\"E-mail\",\"address\":\"Adresse\",\"phone\":\"Telephone\",\"enter_name\":\"Saisir votre nom ici\",\"enter_email\":\"Saisir votre e-mail ici\",\"enter_address\":\"Saisir votre adresse ici\",\"enter_phone\":\"Saisir votre telephone ici\",\"enter_message\":\"Saisir votre message ici\",\"send\":\"Envoyer\"},\"footer\":{\"address\":\"Adresse\",\"links\":\"Liens rapides\"}}");
 
 /***/ }),
 

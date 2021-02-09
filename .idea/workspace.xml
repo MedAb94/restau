@@ -7,7 +7,15 @@
     <list default="true" id="90d62588-06a9-4073-a7cb-9523f8bb848c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Contact.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Contact.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Slider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Slider.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/locales/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/locales/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/locales/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/locales/fr.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,14 +189,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\medab\Desktop\Work\restau" />
       <recent name="C:\Users\medab\Desktop\Work\restau\resources\js\assets" />
+      <recent name="C:\Users\medab\Desktop\Work\restau" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\medab\Desktop\Work\restau\resources\js" />
@@ -240,7 +248,8 @@
       <workItem from="1612789967480" duration="358000" />
       <workItem from="1612790344644" duration="22000" />
       <workItem from="1612790563303" duration="1250000" />
-      <workItem from="1612805941771" duration="1022000" />
+      <workItem from="1612805941771" duration="1797000" />
+      <workItem from="1612881315500" duration="6393000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,8 @@
 <template>
-    <v-carousel>
-        <v-carousel-item
-            v-for="n in 3"
-            :key="n"
-        >
+    <v-carousel >
+        <v-carousel-item>
             <v-sheet
-                height="100%"
+                :height="height"
                 tile
             >
                 <v-row
@@ -14,7 +11,24 @@
                     justify="center"
                 >
                     <v-img
-                        :src="require('../assets/slide/1.jpg')"
+                        :src="require('../assets/home.jpg')"
+                        cover
+                    />
+                </v-row>
+            </v-sheet>
+        </v-carousel-item>
+        <v-carousel-item>
+            <v-sheet
+                :height="height"
+                tile
+            >
+                <v-row
+                    class="fill-height"
+                    align="center"
+                    justify="center"
+                >
+                    <v-img
+                        :src="require('../assets/about.jpg')"
                         cover
                     />
                 </v-row>
@@ -25,9 +39,17 @@
 </template>
 
 <script>
-    export default {
-        name: "Slider",
+export default {
+    name: "Slider",
+    props: {
+        height: {
+            type: String,
+            default: '100%'
+        }
     }
+
+
+}
 </script>
 
 <style scoped>

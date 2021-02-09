@@ -1,6 +1,41 @@
 <template>
     <div>
-        <slider></slider>
+        <v-carousel height="50vh">
+            <v-carousel-item>
+                <v-sheet
+                    height="100%"
+                    tile
+                >
+                    <v-row
+                        class="fill-height"
+                        align="center"
+                        justify="center"
+                    >
+                        <v-img
+                            :src="require('../assets/contact.jpg')"
+                            cover
+                        />
+                    </v-row>
+                </v-sheet>
+            </v-carousel-item>
+            <v-carousel-item>
+                <v-sheet
+                    height="100%"
+                    tile
+                >
+                    <v-row
+                        class="fill-height"
+                        align="center"
+                        justify="center"
+                    >
+                        <v-img
+                            :src="require('../assets/about.jpg')"
+                            cover
+                        />
+                    </v-row>
+                </v-sheet>
+            </v-carousel-item>
+        </v-carousel>
         <v-container>
             <v-card class="bg-primary rounded py-5" elevation="8">
                 <v-form v-model="valid">
